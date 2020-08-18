@@ -1,0 +1,51 @@
+.categoryPage-layout {
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--surface);
+    border-radius: $radius2;
+
+
+    @include breakpoint(tab) {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    @include breakpoint(phone) {
+        padding: 2rem 0.75rem;
+    }
+
+    .categoryNews {
+        width: 70%;
+
+
+
+        @include breakpoint(tab) {
+            width: 100%;
+        }
+    }
+
+
+    .categoryNews-recents {
+        width: 28%;
+        position: sticky;
+        top: 0;
+        right: 0;
+        height: auto;
+
+
+        @include breakpoint(tab) {
+            width: 100%;
+            margin-top: 5rem;
+
+        }
+    }
+}
+
+.categoryNewsPost {
+    width: 100%;
+    display: flex;
+    margin-bottom: $gap;
+
+}

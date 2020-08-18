@@ -1,0 +1,148 @@
+#singleNews {
+    width: 100%;
+    padding: 2rem 4rem;
+    background-color: var(--surface);
+    border-radius: $radius2;
+
+    @include breakpoint(tab) {
+        padding: 2rem;
+    }
+
+    @include breakpoint(phone) {
+        padding: 2rem 0.75rem;
+    }
+
+
+    .singleNews {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+
+
+        @include breakpoint(tab-land) {
+            flex-direction: column;
+
+        }
+
+
+
+
+        &-content {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            border-radius: $radius2;
+            padding-right: $gap;
+
+
+            @include breakpoint(tab-land) {
+                width: 100%;
+                margin-bottom: 5rem;
+                padding-right: 0;
+
+            }
+
+            @include breakpoint(phone) {
+                margin-bottom: 0;
+            }
+
+            article h1 {
+                box-shadow: $light-shadow;
+                border-radius: $radius2;
+                padding: 2rem;
+                text-align: left;
+                background-color: var(--secondSurface);
+
+            }
+
+
+        }
+
+        &-recents {
+            width: 30%;
+            height: auto;
+
+            @include breakpoint(tab-land) {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.newsArticle-image {
+    margin-top: 2.7rem;
+}
+
+.newsArticle-image div {
+    box-shadow: $light-shadow;
+    border-radius: $radius2;
+}
+
+.newsArticle-credits {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .shareBtns {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.2rem;
+
+        a {
+            display: inline-block;
+            background-color: var(--secondary);
+            padding: 0.6rem;
+            border-radius: 2rem;
+            margin-left: 2rem;
+
+
+            &:hover {
+                background-color: var(--onHover);
+            }
+
+            img {
+                width: 1.8rem;
+                height: 1.8rem;
+                z-index: 10;
+
+            }
+
+        }
+    }
+}
+
+.newsArticle-para {
+    text-align: justify;
+    box-shadow: $light-shadow;
+    border-radius: $radius2;
+    padding: 2rem 0;
+    background-color: var(--secondSurface);
+
+    @include breakpoint(phone) {
+        text-align: left;
+    }
+
+    p {
+        padding: 1rem 2rem;
+        color: var(--onSurface);
+
+
+        img {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+    }
+
+
+}

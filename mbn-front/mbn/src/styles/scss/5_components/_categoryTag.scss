@@ -1,0 +1,10 @@
+.categoryTag {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--onPrimary);
+    font-size: $step0;
+    border-radius: $radius2;
+    box-shadow: $light-shadow;
+    text-transform: uppercase;
+}

@@ -1,0 +1,144 @@
+// Color Variables
+//$light-grey--3:#{hsl(228, 100%, 91%)};
+
+
+
+
+:root {
+    --primary-color:#{hsl(351, 100%, 39%)};
+    --secondary-color: #{hsl(228, 100%, 91%)};
+
+    --light-grey--0:#{hsl(228, 100%, 98%)};
+    --light-grey--1:#{hsl(229, 100%, 95%)};
+    --light-grey--2:#{hsl(229, 100%, 91%)};
+
+
+    --dark-grey--0:#{hsl(0, 0%, 49%)};
+    --dark-grey--1:#{hsl(0, 0%, 40%)};
+    --dark-grey--2:#{hsl(0, 0%, 29%)};
+    --dark-grey--3:#{hsl(0, 0%, 20%)};
+
+
+
+    --black:#{hsl(330, 4%, 11%)};
+    --pure-white:#{hsl(0, 0%, 100%)};
+}
+
+
+.light {
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    --background: var(--light-grey--1);
+    --surface: var(--light-grey--0);
+    --primary: var(--primary-color);
+    --secondary: var(--secondary-color);
+    --secondSurface: var(--pure-white);
+    --onSecondSurface: #{hsl(0, 0%, 7%)};
+    --onBackground: var(--dark-grey--3);
+    --onSurface: var(--dark-grey--1);
+    --onPrimary: var(--pure-white);
+    --onSecondary: var(--dark-grey--2);
+    --onHover: var(--secondary-color);
+    --stayBlack: var(--black);
+    --white: var(--pure-white);
+}
+
+.dark {
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    --background: #{hsl(254, 42%, 14%)};
+    --surface: #{hsl(254, 41%, 24%)};
+    --primary: #{hsl(340, 100%, 37%)};
+    --secondary: #{hsl(255, 41%, 31%)};
+    --onBackground: var(--light-grey--0);
+    --onSurface: var(--light-grey--1);
+    --onPrimary: var(--pure-white);
+    --onSecondary: var(--secondary-color);
+    --black: #{hsl(255, 42%, 21%)};
+    --white: var(--pure-white);
+    --secondSurface: #{hsl(254, 41%, 34%)};
+    --onSecondSurface: var(--pure-white);
+    --onHover: #{hsl(254, 41%, 47%)};
+}
+
+.help {
+    background-color: #372963,
+        #00FF9C,
+        #100D23,
+        #c592ff,
+        #ff4081;
+}
+
+//reference for hex to hsl $accent-color:#{hsl(0, 80%, 75%)};
+
+// $theme-color:#C5001F;
+
+
+
+// $light-grey--0:#f5f7ff;
+// $light-grey--1:#e4e9ff;
+// $light-grey--2:#d3dbff;
+// $light-grey--3:#d3dcff;
+
+// $dark-grey--0:#7e7e7e;
+// $dark-grey--1:#656565;
+// $dark-grey--2:#4b4b4b;
+// $dark-grey--3:#323232;
+
+
+// $black:#1D1B1C;
+// $pure-white:#fff;
+
+// Fonts
+
+
+$body-font: 'Noto Sans',
+sans-serif;
+$heading-font:'Palanquin Dark',
+sans-serif;
+
+
+
+
+// Font Size Variables
+$step0: 1rem;
+$base-font: 1.5rem;
+$step01: 2.1rem;
+$step02: 2.8rem;
+$step03: 3.7rem;
+$step04: 5rem;
+$step05: 6.7rem;
+$step06:8.9rem;
+$step07:11.9rem;
+
+
+//Border Radius
+$radius2: 0.4rem;
+
+
+
+
+
+// gap
+
+$gap:2.5rem;
+
+// Box Shadows
+
+$light-shadow: 0 1px 2px rgba(33, 33, 33, 0.07),
+0 2px 4px rgba(33, 33, 33, 0.07),
+0 4px 8px rgba(33, 33, 33, 0.07),
+
+;
+
+$dark-shadow:0 1rem 1rem 0 rgba(66, 66, 66, 0.2),
+0 1rem 2rem 1rem rgba(66, 66, 66, 0.1);
+
+
+
+
+
+
+
+
+
+// For Local development
+// gatsby develop -H 0.0.0.0

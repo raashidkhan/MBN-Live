@@ -1,0 +1,388 @@
+.heroLayout {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+    @include breakpoint(tab) {
+        flex-direction: column-reverse;
+    }
+
+    @include breakpoint(phone) {
+        margin-bottom: 0;
+    }
+}
+
+
+.heroSection {
+    width: 100%;
+
+
+    .latestNews {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+
+
+        @include breakpoint(tab) {
+            flex-direction: column;
+        }
+
+
+        &-col-1 {
+            width: 60%;
+            height: 42rem;
+            position: relative;
+
+
+
+            @include breakpoint(tab) {
+                width: 100%;
+            }
+        }
+
+        &-col-2 {
+            position: relative;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: var(--surface);
+            padding: 2rem;
+            border-bottom-right-radius: $radius2;
+            border-top-right-radius: $radius2;
+
+
+            @include breakpoint(tab) {
+                width: 100%;
+                padding: 4rem 2rem;
+                border-bottom-right-radius: $radius2;
+                border-bottom-left-radius: $radius2;
+            }
+
+
+            .latestNews-heading {
+                text-transform: uppercase;
+
+                @include breakpoint(tab) {
+                    margin-bottom: 1rem;
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+
+#indiaNews {
+    width: 100%;
+    margin-bottom: 4rem;
+
+    .indiaNews {
+        padding: 4rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30rem 30rem;
+        grid-auto-rows: 30rem;
+        gap: $gap;
+        border-radius: $radius2;
+        background-color: var(--surface);
+
+
+
+        @include breakpoint(tab) {
+            width: 100%;
+            position: relative;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 35rem;
+            grid-auto-flow: column;
+            grid-auto-columns: 45%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding: 4rem 2rem;
+        }
+
+        @include breakpoint(phone) {
+            grid-template-columns: 90%;
+            grid-auto-columns: 90%;
+            grid-template-rows: 28rem;
+            padding: 2rem;
+        }
+
+
+    }
+}
+
+
+#mumbaiNews {
+    width: 100%;
+    margin-bottom: 4rem;
+
+
+    .mumbaiNews {
+
+
+        &-row1 {
+            height: 40rem;
+        }
+
+        &-row2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: $gap;
+            border-radius: $radius2;
+            background-color: var(--surface);
+            padding: 4rem;
+
+            @include breakpoint(tab) {
+                position: relative;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                padding: 4rem 2rem;
+
+
+            }
+
+            @include breakpoint(phone) {
+                padding: 2rem;
+                gap: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+#politicsNews {
+    width: 100%;
+    margin-bottom: 4rem;
+
+
+
+
+    .politicsNews {
+        border-radius: $radius2;
+        background-color: var(--surface);
+        padding: 4rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30rem;
+        grid-auto-rows: 30rem;
+        gap: $gap;
+
+
+
+        @include breakpoint(tab) {
+            position: relative;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 35rem;
+            grid-auto-flow: column;
+            grid-auto-columns: 45%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding: 4rem 2rem;
+        }
+
+        @include breakpoint(phone) {
+            grid-template-columns: 90%;
+            grid-auto-columns: 90%;
+            grid-template-rows: 28rem;
+            padding: 2rem;
+        }
+    }
+}
+
+
+#crimeNews {
+    width: 100%;
+    margin-bottom: 4rem;
+
+
+
+    .crimeNews {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: $gap;
+        border-radius: $radius2;
+        background-color: var(--surface);
+        padding: 4rem;
+
+        @include breakpoint(tab) {
+            padding: 4rem 2rem;
+
+        }
+
+        @include breakpoint(phone) {
+            padding: 2rem;
+            display: block;
+        }
+
+        &-col1 {
+            height: calc(20rem*2 + 2.5rem);
+
+            @include breakpoint(phone) {
+                margin-bottom: 2rem;
+                height: 20rem;
+
+            }
+        }
+
+        &-col2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 20rem 20rem;
+            gap: $gap;
+
+
+            @include breakpoint(phone) {
+                display: block;
+
+                a {
+                    height: 20rem;
+                    margin-bottom: 2rem;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+
+
+
+            }
+
+            a h2 {
+                font-size: $base-font;
+            }
+        }
+    }
+}
+
+
+
+#sportsNews {
+    width: 100%;
+    margin-bottom: 4rem;
+
+
+
+    .sportsNews {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: $gap;
+        border-radius: $radius2;
+        background-color: var(--surface);
+        padding: 4rem;
+
+        @include breakpoint(tab) {
+            padding: 4rem 2rem;
+        }
+
+        @include breakpoint(phone) {
+            display: block;
+            padding: 2rem;
+        }
+
+        &-col1 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+
+            @include breakpoint(tab) {
+                gap: 0 2rem;
+            }
+
+        }
+
+        &-col2 {
+            display: grid;
+            grid-template-rows: 32rem 32rem;
+            gap: 2rem;
+
+            @include breakpoint(phone) {
+                display: none;
+
+            }
+        }
+    }
+}
+
+
+
+#entertainmentNews {
+    width: 100%;
+
+
+
+
+    .entertainmentNews {
+        gap: $gap;
+        border-radius: $radius2;
+        background-color: var(--surface);
+        padding: 4rem;
+
+        @include breakpoint(tab) {
+            padding: 4rem 2rem;
+        }
+
+        @include breakpoint(phone) {
+            padding: 2rem;
+        }
+
+        &-row1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 30rem;
+            gap: $gap;
+
+            @include breakpoint(tab) {
+                position: relative;
+                grid-template-columns: 45% 45%;
+                grid-template-rows: 35rem;
+                grid-auto-flow: column;
+                grid-auto-columns: 45%;
+                gap: 1.5rem;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                padding-bottom: 1rem;
+            }
+
+            @include breakpoint(phone) {
+                grid-template-columns: 90%;
+                grid-auto-columns: 90%;
+                grid-template-rows: 28rem;
+            }
+
+        }
+
+        &-row2 {
+            padding: 2rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: $gap;
+
+            @include breakpoint(phone) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+//popup('https://twitter.com/share?url='+ _nn_story_url + '&text='+ _nn_story_title, '');
+//popup('https://www.facebook.com/sharer.php?u='+ _nn_story_url, '');
+//https://web.whatsapp.com/send?text=%E0%A4%85%E0%A4%AF%E0%A5%8B%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%3A+%E0%A4%AD%E0%A5%82%E0%A4%AE%E0%A4%BF%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%A8+%E0%A4%95%E0%A5%87+%E0%A4%AC%E0%A4%BE%E0%A4%A6+PM+%E0%A4%AE%E0%A5%8B%E0%A4%A6%E0%A5%80+%E0%A4%A8%E0%A5%87+%E0%A4%9C%E0%A4%BE%E0%A4%B0%E0%A5%80+%E0%A4%95%E0%A4%BF%E0%A4%AF%E0%A4%BE+%E0%A4%B0%E0%A4%BE%E0%A4%AE+%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%BF%E0%A4%B0+%E0%A4%AA%E0%A4%B0+%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7+%E0%A4%A1%E0%A4%BE%E0%A4%95+%E0%A4%9F%E0%A4%BF%E0%A4%95%E0%A4%9F%0Ahttps%3A%2F%2Fwww.newsnationtv.com%2Findia%2Fnews%2Fpm-narendra-modi-releases-a-commemorative-postage-stamp-on-the-shree-ram-janmabhoomi-mandir-152885.html%3Fref%3Dwhatsapp+%0Avia+%40NewsNation+%0AClick+to+Download+Mobile+App+https%3A%2F%2Fonelink.to%2F2cu539

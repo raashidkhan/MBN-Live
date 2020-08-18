@@ -1,0 +1,27 @@
+.pageContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+
+    @include breakpoint(tab) {
+
+        flex-direction: column;
+    }
+
+
+    .main {
+        width: 85%;
+        padding: 4rem;
+
+
+        @include breakpoint(tab) {
+            width: 100%;
+            padding: 2rem 0.75rem;
+
+
+
+        }
+    }
+}

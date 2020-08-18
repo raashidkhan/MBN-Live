@@ -1,0 +1,29 @@
+.recentNews {
+
+    @include breakpoint(tab-land) {
+        display: flex;
+        height: auto;
+    }
+
+    @include breakpoint(tab-land) {
+        flex-direction: column;
+        padding: 0 2rem;
+
+    }
+
+    @include breakpoint(tab-land) {
+        padding: 0;
+    }
+
+    .recentNews-Card {
+        margin-bottom: 2rem;
+        border-radius: $radius2;
+        box-shadow: $light-shadow;
+        overflow: hidden;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+}

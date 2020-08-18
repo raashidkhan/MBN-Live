@@ -1,0 +1,32 @@
+@import "1_abstract/functions";
+@import "1_abstract/mixins";
+@import "1_abstract/variables";
+
+
+
+@import "2_base/base";
+@import "2_base/typography";
+@import "2_base/utilities";
+@import "2_base/animations";
+@import "2_base/svg";
+
+// @import "3_layout/herosection";
+@import "3_layout/navbar";
+@import "3_layout/aside";
+@import "3_layout/recentnews";
+@import "3_layout/pageLayout";
+@import "3_layout/footer";
+
+
+@import "4_pages/homepage";
+@import "4_pages/singleNewsPage";
+@import "4_pages/categoryPage";
+@import "4_pages/404";
+
+
+@import "5_components/breakingNews";
+@import "5_components/fullviewcard";
+@import "5_components/sidebysidecard";
+@import "5_components/updownCard";
+@import "5_components/categoryTag";
+@import "5_components/buttons";
