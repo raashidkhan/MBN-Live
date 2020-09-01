@@ -2,7 +2,7 @@ import React from "react"
 import { Logo } from "../components/Logo"
 import { Link } from "gatsby"
 import facebook from "../images/facebook.svg"
-import dragIcon from "../images/drag-left.gif"
+import dragIcon from "../images/arrow-right.svg"
 import yt from "../images/yt.svg"
 import twitter from "../images/twitter.svg"
 import Theme from "../components/Theme"
@@ -14,7 +14,15 @@ const Aside = () => {
     day: "numeric",
   }
   const today = new Date()
-  // const [isOpen, setIsOpen] = React.useState(false)
+  // const linkContainer = React.useRef("")
+
+  // const handleScroll = () => {
+  //   Array.from(linkContainer.current.childNodes).forEach(item => {
+  //     console.log(item)
+  //     // item.style.transform = "translateX(-100%)"
+  //   })
+  // }
+
   return (
     <div className="asideContainer">
       <div className="asideWrapper">
@@ -42,7 +50,10 @@ const Aside = () => {
           </a>
         </div>
 
-        <ul className="asideContainer-item">
+        <ul
+          // ref={linkContainer}
+          className="asideContainer-item"
+        >
           <li className="asideContainer-items--link">
             <Link
               to="/"
@@ -108,7 +119,9 @@ const Aside = () => {
             </Link>
           </li>
         </ul>
+        {/* <button onClick={handleScroll}> */}
         <img className="drag-icon" src={dragIcon} alt="drag for more links" />
+        {/* </button> */}
       </div>
     </div>
   )

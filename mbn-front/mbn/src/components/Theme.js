@@ -122,7 +122,7 @@ const Theme = () => {
           style={{ transform: "rotate(90deg)" }}
         >
           <mask id="moon-mask-eoww">
-            <rect x="0" y="0" width="18" height="29" fill="#FFF"></rect>
+            <rect x="0" y="0" width="18" height="19" fill="#FFF"></rect>
             <circle cx="25" cy="0" r="8" fill="black"></circle>
           </mask>
           <circle

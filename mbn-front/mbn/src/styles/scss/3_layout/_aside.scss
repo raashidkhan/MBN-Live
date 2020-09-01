@@ -39,7 +39,7 @@
     position: sticky;
     left: 0;
     top: 0;
-    height: 100vh;
+    height: 110vh;
 
 
     @include breakpoint(tab) {
@@ -47,6 +47,7 @@
         height: auto;
         padding: 0;
         z-index: 1000;
+
 
 
     }
@@ -91,21 +92,6 @@
 
 }
 
-.drag-icon {
-    display: none;
-
-    @include breakpoint(tab) {
-        display: block;
-        width: 2rem;
-        height: 2rem;
-        position: absolute;
-        top: 0.5rem;
-
-        right: 1rem;
-        mix-blend-mode: multiply;
-        pointer-events: none;
-    }
-}
 
 .asideContainer-item {
 
@@ -115,7 +101,8 @@
         overflow-x: scroll;
         overflow-y: hidden;
         padding: 1rem;
-        margin: 0 auto;
+
+        margin-right: 4rem;
 
 
     }
@@ -139,6 +126,7 @@
 
 
 
+
     @include breakpoint(tab) {
         border: none;
 
@@ -155,6 +143,10 @@
     align-items: center;
     padding: 0 1.2rem;
 
+    @include breakpoint(tab) {
+
+        padding: 0;
+    }
 
 }
 
@@ -209,5 +201,22 @@
 
     100% {
         transform: scaleX(1);
+    }
+}
+
+.drag-icon {
+    display: none;
+
+    @include breakpoint(tab) {
+        display: block;
+        width: 1.25rem;
+        padding: 0 0.75rem;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: var(--surface);
+        right: 0;
+        box-sizing: content-box;
+        pointer-events: none;
     }
 }

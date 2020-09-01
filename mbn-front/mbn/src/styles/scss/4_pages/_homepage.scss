@@ -83,7 +83,10 @@
     width: 100%;
     margin-bottom: 4rem;
 
+
+
     .indiaNews {
+
         padding: 4rem;
         width: 100%;
         display: grid;
@@ -93,6 +96,7 @@
         gap: $gap;
         border-radius: $radius2;
         background-color: var(--surface);
+
 
 
 
@@ -106,6 +110,9 @@
             overflow-x: scroll;
             overflow-y: hidden;
             padding: 4rem 2rem;
+
+
+
         }
 
         @include breakpoint(phone) {
