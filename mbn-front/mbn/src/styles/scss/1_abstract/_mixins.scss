@@ -3,7 +3,7 @@
 
 @mixin breakpoint($point) {
     @if $point==fourK-desktop {
-        @media screen and (min-width: 2500px) {
+        @media screen and (min-width: 2600px) {
             @content;
         }
     }

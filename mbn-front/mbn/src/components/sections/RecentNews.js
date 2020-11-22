@@ -2,10 +2,10 @@ import React from "react"
 import UpdownCard from "../cards/UpdownCard"
 import { useStaticQuery, graphql } from "gatsby"
 
-const RecentNews = () => {
+const RecentNews = props => {
   const data = useStaticQuery(graphql`
     {
-      news: allStrapiNews(limit: 3, sort: { fields: strapiId, order: DESC }) {
+      news: allStrapiNews(limit: 4, sort: { fields: strapiId, order: DESC }) {
         nodes {
           author
           category
@@ -25,9 +25,14 @@ const RecentNews = () => {
     }
   `)
 
+  const currentTitle = props.newsTitle || " "
+  const filteredNews = data.news.nodes.filter(news => {
+    return news.title !== currentTitle
+  })
+
   return (
     <div className="recentNews">
-      {data.news.nodes.map((item, index) => {
+      {filteredNews.map((item, index) => {
         return (
           <div className="recentNews-Card" key={index}>
             <UpdownCard

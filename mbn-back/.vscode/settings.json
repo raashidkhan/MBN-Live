@@ -1,0 +1,6 @@
+{
+  "typescript.tsdk": "",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#000000" // change this color!
+  }
+}

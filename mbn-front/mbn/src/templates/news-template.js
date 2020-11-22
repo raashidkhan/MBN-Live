@@ -81,7 +81,7 @@ const NewsTemplate = ({ data }) => {
               <h2 className="heading-secondary margin-bottom-small text-theme-color">
                 Recent News
               </h2>
-              <RecentNews></RecentNews>
+              <RecentNews newsTitle={data.news.title}></RecentNews>
             </div>
           </div>
         </div>
