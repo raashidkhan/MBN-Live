@@ -2,10 +2,6 @@
 
 Website design and development for MBN Live - A news agency.
 
-### Client Description
-
-MBN Live is a free news association arranged at Mumbai. Chief Editor of MBN live is in news-reporting business for longer than ten years. After so long endeavouring to convey unprejudiced news he, at last, chose to have a website where he can communicate and convey facts with no surprises.
-
 ### Project Description
 
 Complete Design and development for a news agency situated at Mumbai, India.
