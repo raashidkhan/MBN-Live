@@ -17,6 +17,10 @@ Strapi as a headless CMS.
 
 https://mbnlive.in/
 
+#### Case Study at
+
+https://www.kubo.co.in/project/mbn-live
+
 ### Files and Directories
 
 Front-end File Structure
